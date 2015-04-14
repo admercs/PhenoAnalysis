@@ -1,0 +1,110 @@
+&model
+regional = .true.,	! true: perform regional analysis ; false: local analysis
+original = .false.,	! true: run the original phenology scheme (Jolly et al. 2005)
+nrens = 500,		! number of ensemble members
+nhgt = 1,		! number of subgrid-scale elevation classes (only for regional mode)
+use_forcing = .true.,	! use forcing (temperature-based)
+use_chilling = .false.,	! use chilling (temperature-based)
+use_moisture = .true.,	! use moisture limitation (vapor pressure deficit-based)
+use_light = .true.,	! use light limitation (photoperiod- or global radiation-based)
+use_rainfall = .false.,	! use rainfall instead of vapor pressure deficit for moisture limitation
+use_photo = .true.,	! use photoperiod instead of global radiation for light limitation
+averagepft = .true.,	! pft-average grid cells in output
+averagehgt = .true.,	! hgt-average grid cells in output
+averageens = .true.,	! ens-average grid cells in output
+compressens = .true.,	! compress ensemble members to mean and stddev
+restart = .false.,	! restart from previous run or not
+restartdate = .false.,	! true: use start date of restart file, false: use namelist start date
+filelength = 3,		! output files: (-1) unlimited, (1) daily, (2) monthly, (3) yearly)
+verbose = .true.	! true: increase verbosity, false: decrease verbosity
+/
+
+&assimilation
+analysis = .true.,		! true: data assimilation; false: prediction only
+saveobs = .true.,		! true: save observations on the output grid; false: do not save observations
+regridobs = .true.,		! true: grid observations prior to analysis, false: use raw observations
+useobspct = .false.,		! true: model states represent observed pft/hgt distribution (only if regridobs=true and analysis=true)
+simulator = .false.,		! true: simulate observations w. known parameters; false: read observations
+yearlyanalysis = .true.,	! true: perform analysis at the end of each year instead of after each observation step
+globalanalysis = .true.,	! true: perform global analysis (updates parameters & states, for whole domain)
+localanalysis = .false.,	! true: perform local analysis (updates only states, by grid point)
+influence = 0.65,		! HW of influence function relative to grid point extent
+weightmag = .false.,		! normalize HA-D and observation errors to observation magnitude
+weightdist = .false.,		! normalize HA-D and observation errors to observation distance
+weightarea = .false.,		! normalize HA-D and observation errors to observation area
+weightgrid = .false.,		! weight re-gridded observations by observation error
+sepminmax = .true.,		! posteriori mean of lower parameter bound always higher than mean of higher parameter bound
+nrobsmax = 50000,		! upper limit for ! observations (memory)
+nrobsmin = 1,			! lower limit for ! observations (stability)
+deflation = 1.0,		! deflation factor (0.0-1.0)
+inflation = 0.5			! inflation factor (0.0-1.0)
+/
+
+&other
+resubmit = 1,		! resubmit job after each day, month, year
+siteloop = 0,		! 1: loop over sites instead of process sites by parallel execution with MPI
+loop = 3		! Number of loops through above time period
+/
+
+&spatial
+landcover_screen = 0,	! select UMD Landcover class (to screen observations for) or set to 0
+pft_screen = 0,		! select NCAR pft number (screen observations, and subset output) or set to 0
+nxprocs = 24,		! parallelize processing on horizontal patches (only used if mpi is enabled)
+nyprocs = 20,		! parallelize processing on vertical patches (only used if mpi is enabled)
+subgrid  = 1		! output subgrid spacing (output grid: nlon*subgrid, nlat*subgrid)
+/
+
+&temporal
+date_start = "2008",	! start date (string: YYYY, YYYYMM or YYYYMMDD)
+date_end = "2010",      ! end date (string: YYYY, YYYYMM or YYYYMMDD)
+dtmod = 3600,		! driver integration time step [s]
+dtphen = 86400,		! phenology model integration time step [s]
+dtout = 86400		! output write time step [s]
+/
+
+&system
+!walltime = "01:00:00",	! walltime (string)
+!account = "msclim",	! account name or number (string)
+!queue = "normal",	! computational queue (string)
+!memory = "2GB",	! required memory (string, specify units also)
+!cpupernode = 16,	! number of cores (or cpu's) per node
+walltime = "06:00:00",	! walltime (string)
+account = "s83",	! account name or number (string)
+queue = "normal",	! computational queue (string)
+memory = "32GB",	! required memory (string, specify units also)
+cpupernode = 24,	! number of cores (or cpu's) per node
+!walltime = "01:00",	! walltime (string)
+!account = "P93300041",	! account name or number (string)
+!queue = "regular",	! computational queue (string)
+!memory = "2GB",		! required memory (string, specify units also)
+!cpupernode = 16,	! number of cores (or cpu's) per node
+nprocess = 240		! number of processes (mostly nxprocs x nyprocs, but maybe less when water areas are present)
+/
+
+&data
+!meteorologytype = "alma" ,		! meteorological driver data
+meteorologytype = "cosmo" ,		! meteorological driver data
+!meteorologytype = "ecmwf" ,		! meteorological driver data
+pfttype = "Global-FULL",		! plant functional type data
+landcovertype = "modis",		! land cover data
+topotype = "Global-FULL",		! elevation data
+satellitetype = "modis"			! input satellite assimilation data
+/
+
+&paths
+!projectdir = "/Users/stockli/phenoanalysis-output",			! directory where the project is executed 
+!datadir = "/Users/stockli",						! top level data directory where the meteo+topo+pft+landcover+assimilation data is located
+!projectdir = "/store/msclim/stockli/phenoanalysis-output",			! directory where the project is executed 
+!datadir = "/store/msclim/stockli",						! top level data directory where the meteo+topo+pft+landcover+assimilation data is located
+projectdir = "/scratch/stockli/phenoanalysis-output",			! directory where the project is executed 
+datadir = "/scratch/stockli",						! top level data directory where the meteo+topo+pft+landcover+assimilation data is located
+!projectdir = "/glade/p/cgd/tss/people/stockli/phenoanalysis-output",	! directory where the project is executed 
+!datadir = "/glade/p/cgd/tss/people/stockli/",				! top level data directory where the meteo+topo+pft+landcover+assimilation data is located
+!meteorologydir = "station/alma",					! absolute or relative to datadir
+meteorologydir = "cosmo/cosmo7",					! absolute or relative to datadir
+!meteorologydir = "ecmwf/era-interim",					! absolute or relative to datadir
+pftdir = "pft",								! absolute or relative to datadir
+landcoverdir = "modis",							! absolute or relative to datadir
+topodir = "topo",							! absolute or relative to datadir
+satellitedir = "modis"							! absolute or relative to datadir
+/

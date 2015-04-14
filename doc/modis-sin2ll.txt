@@ -1,0 +1,11 @@
+[is_k k fwd tp] lat 0.000000  long 0.000000  =>  vert tile 9  horiz tile 18  line -0.50  samp -0.50
+[is_k k fwd tp] lat 50.000000  long 120.000000  =>  vert tile 3  horiz tile 25  line 1199.50  samp 856.00
+[is_k k fwd tp] lat -85.000000  long 170.000000  =>  vert tile 17  horiz tile 19  line 599.50  samp 576.00
+
+[sn k fwd tp] lat 0.000000  long 0.000000  =>  vert tile 9  horiz tile 18  line -0.50  samp -0.50
+[sn k fwd tp] lat 50.000000  long 120.000000  =>  vert tile 3  horiz tile 25  line 1199.50  samp 855.64
+[sn k fwd tp] lat -85.000000  long 170.000000  =>  vert tile 17  horiz tile 19  line 599.50  samp 577.48
+
+[sn k fwd gm] lat 0.000000  long 0.000000  =>  x 0.00  y -0.00
+[sn k fwd gm] lat 50.000000  long 120.000000  =>  x 8576976.20  y 5559752.60
+[sn k fwd gm] lat -85.000000  long 170.000000  =>  x 1647518.85  y -9451579.42

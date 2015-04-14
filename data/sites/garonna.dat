@@ -1,0 +1,9 @@
+# This is the site / region geographic boundary conditions file. Columns are separated by commas. For site locations xrange/yrange are scalars. 
+No.,	Abbr.,	Name,				xmin,		xmax,		ymin,		ymax,		deltax,		deltay,		Sitetype,	Projection,	Projparam,	Elevation
+1,	SIB1,	Siberia-LOW,			147.27,		147.67,		70.62,		71.02,		0.05,		0.05,		grid,		latitude_longitude,		NA,		NA
+2,	LAE1,	Laegeren-LOW,			8.20,		8.60,		47.28,		47.68,		0.05,		0.05,		grid,		latitude_longitude,		NA,		NA
+3,	SIB2,	Siberia-HIGH,			147.27,		147.67,		70.62,		71.02,		0.01,		0.01,		grid,		latitude_longitude,		NA,		NA
+4,	LAE2,	Laegeren-HIGH,			8.20,		8.60,		47.28,		47.68,		0.01,		0.01,		grid,		latitude_longitude,		NA,		NA
+5,	SIB3,	Siberia,			147.0,		148.0,		70.5,		71.5,		0.01,		0.01,		grid,		latitude_longitude,		NA,		NA
+6,	LAE3,	Laegeren,			8.0,		9.0,		47.0,		48.0,		0.01,		0.01,		grid,		latitude_longitude,		NA,		NA
+7,	SIB4,	Siberia-FULL,			147.0,		148.0,		70.5,		71.5,		0.008333333333333333333,		0.0083333333333333333333,		grid,		latitude_longitude,		NA,		NA

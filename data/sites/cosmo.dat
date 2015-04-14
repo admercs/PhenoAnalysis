@@ -1,0 +1,8 @@
+# This is the site / region geographic boundary conditions file. Columns are separated by commas. min/max coordinates are pixel edge not center.
+No.,	Short,	Name,			xmin,		xmax,		ymin,		ymax,		deltax,		deltay,		Sitetype,	Projection,	Projparam,	Elevation
+1,	NA,	COSMO1,			-6.805,		4.775,		-4.505,		3.235,		0.01,		0.01,		grid,		rotated_latitude_longitude,		grid_north_pole_longitude=-170.0;grid_north_pole_latitude=43.0,	0
+2,	NA,	COSMO2,			-5.71,		4.69,		-4.01,		2.99,		0.02,		0.02,		grid,		rotated_latitude_longitude,		grid_north_pole_longitude=-170.0;grid_north_pole_latitude=43.0,	0
+3,	NA,	COSMO7,			-16.35,		7.23,		-9.81,		10.47,		0.06,		0.06,		grid,		rotated_latitude_longitude,		grid_north_pole_longitude=-170.0;grid_north_pole_latitude=43.0,	0
+4,	NA,	COSMO2-Keller,		-5.61,		4.39,		-4.41,		5.59,		0.02,		0.02,		grid,		rotated_latitude_longitude,		grid_north_pole_longitude=-170.0;grid_north_pole_latitude=43.0,	0
+5,	NA,	COSMO2-Leutwyler,	-18.87,		11.97,		-14.87,		15.97,		0.02,		0.02,		grid,		rotated_latitude_longitude,		grid_north_pole_longitude=-170.0;grid_north_pole_latitude=43.0,	0
+6,	NA,	COSMO2-TEST,		-0.03,		0.03,		-0.03,		0.03,		0.06,		0.06,		grid,		rotated_latitude_longitude,		grid_north_pole_longitude=-170.0;grid_north_pole_latitude=43.0,	0

@@ -1,0 +1,91 @@
+Color Brewer Tables for IDL from:
+
+
+http://michaelgalloy.com
+
+
+0. YlGn (Sequential)
+1. YlGnBu (Sequential)
+2. GnBu (Sequential)
+3. BuGn (Sequential)
+4. PuBuGn (Sequential)
+5. PuBu (Sequential)
+6. BuPu (Sequential)
+7. RdPu (Sequential)
+8. PuRd (Sequential)
+9. OrRd (Sequential)
+10. YlOrRd (Sequential)
+11. YlOrBr (Sequential)
+12. Purples (Sequential)
+13. Blues (Sequential)
+14. Greens (Sequential)
+15. Oranges (Sequential)
+16. Reds (Sequential)
+17. Greys (Sequential)
+18. PuOr(Diverging)
+19. BrBG(Diverging)
+20. PRGn(Diverging)
+21. PiYG(Diverging)
+22. RdBu(Diverging)
+23. RdGy(Diverging)
+24. RdYlBu(Diverging)
+25. Spectral(Diverging)
+26. RdYlGn(Diverging)
+27. Set3 (Qualitative) - 3 colors
+28. Set3 (Qualitative) - 4 colors
+29. Set3 (Qualitative) - 5 colors
+30. Set3 (Qualitative) - 6 colors
+31. Set3 (Qualitative) - 7 colors
+32. Set3 (Qualitative) - 8 colors
+33. Set3 (Qualitative) - 9 colors
+34. Set3 (Qualitative) - 10 colors
+35. Set3 (Qualitative) - 11 colors
+36. Set3 (Qualitative) - 12 colors
+37. Pastel1 (Qualitative) - 3 colors
+38. Pastel1 (Qualitative) - 4 colors
+39. Pastel1 (Qualitative) - 5 colors
+40. Pastel1 (Qualitative) - 6 colors
+41. Pastel1 (Qualitative) - 7 colors
+42. Pastel1 (Qualitative) - 8 colors
+43. Pastel1 (Qualitative) - 9 colors
+44. Set1 (Qualitative) - 3 colors
+45. Set1 (Qualitative) - 4 colors
+46. Set1 (Qualitative) - 5 colors
+47. Set1 (Qualitative) - 6 colors
+48. Set1 (Qualitative) - 7 colors
+49. Set1 (Qualitative) - 8 colors
+50. Set1 (Qualitative) - 9 colors
+51. Pastel2 (Qualitative) - 3 colors
+52. Pastel2 (Qualitative) - 4 colors
+53. Pastel2 (Qualitative) - 5 colors
+54. Pastel2 (Qualitative) - 6 colors
+55. Pastel2 (Qualitative) - 7 colors
+56. Pastel2 (Qualitative) - 8 colors
+57. Set2 (Qualitative) - 3 colors
+58. Set2 (Qualitative) - 4 colors
+59. Set2 (Qualitative) - 5 colors
+60. Set2 (Qualitative) - 6 colors
+61. Set2 (Qualitative) - 7 colors
+62. Set2 (Qualitative) - 8 colors
+63. Dark2 (Qualitative) - 3 colors
+64. Dark2 (Qualitative) - 4 colors
+65. Dark2 (Qualitative) - 5 colors
+66. Dark2 (Qualitative) - 6 colors
+67. Dark2 (Qualitative) - 7 colors
+68. Dark2 (Qualitative) - 8 colors
+69. Paired (Qualitative) - 3 colors
+70. Paired (Qualitative) - 4 colors
+71. Paired (Qualitative) - 5 colors
+72. Paired (Qualitative) - 6 colors
+73. Paired (Qualitative) - 7 colors
+74. Paired (Qualitative) - 8 colors
+75. Paired (Qualitative) - 9 colors
+76. Paired (Qualitative) - 10 colors
+77. Paired (Qualitative) - 11 colors
+78. Paired (Qualitative) - 12 colors
+79. Accent (Qualitative) - 3 colors
+80. Accent (Qualitative) - 4 colors
+81. Accent (Qualitative) - 5 colors
+82. Accent (Qualitative) - 6 colors
+83. Accent (Qualitative) - 7 colors
+84. Accent (Qualitative) - 8 colors

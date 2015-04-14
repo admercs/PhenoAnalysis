@@ -1,0 +1,34 @@
+2011/09/01 Reto Stockli (MeteoSwiss)
+
+Please only edit Makefile.am. Makefile will be written by the gnu configure script in ../../
+
+This directory contains the full source code for the pheno_analysis model.
+
+List of source files:
+alma_module.F90              : module reading single point meteorological driver data from e.g. FLUXNET
+assimilation_module.F90      : module handling the observation - model - data assimilation data exchange
+bilinear_module.F90          : module handling bilinear gridding of observations, pft, topography and meteorology data
+cosmo_module.F90             : module reading COSMO7 met driver data
+driver.F90                   : main routine
+driver_module.F90            : module containing all driver arrays and some global routines
+ecmwf_module.F90             : module reading ECMWF reanalysis data
+enkf_module.F90              : module containing the ensemble kalman filter
+fluxnet_module.F90           : module reading FLUXNET flux observations and calculating flux uncertainty  (code stub only, not finished)
+geos_module.F90              : module reading GEOS reanalysis met driver data
+glob.c                       : c routine for searching files including wildcards (can't be done system independently in Fortran)
+hdf_module.F90               : hdf wrapper (used by modis_module.F90)
+init_driver.F90              : module reading namelists and preparing the driver routine
+meteo_module.F90             : module storing met driver arrays and wrapping reading and daily averages of met forcing
+meteorology_average.F90      : routine to produce long-term averages of daily min/mean/cumulated meteorology
+meteorology_daily.F90        : routine to produce daily min/mean/cumulated meteorology out of instantaneous values
+modis_module.F90             : module reading MODIS L3 tiles and calculating uncertainty of observations
+narr_module.F90              : module reaing the NCEP NARR meteorological driver (not updated)
+netcdf_module.F90            : module handling NetCDF output of model/analysis results
+output_module.F90            : module handling output and calling netcdf_module.F90
+pft_module.F90               : module reading the plant functional type map
+phenology_diagnostic_gsi.F90 : routine for diagnostically calculate FPAR and LAI, basically Jolly et al. 2005 (for comparison)
+phenology_module.F90         : module for wrapping the prediction of phenology
+phenology_prognostic_gsi.F90 : routine for prognostically calculate LAI (diagnostic FPAR) by plant functional type used in this framework
+photoperiod_module.F90       : module to calculate photoperiod (obsolete, now done faster in meteorology_daily.F90)
+rotpol_module.F90            : module handling rotated pole reprojection (used for COSMO met driver)
+topo_module.F90              : module reading the topography map

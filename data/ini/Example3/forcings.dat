@@ -1,0 +1,8 @@
+Select = perturbed with random error, Output = written to NetCDF
+No.	Select  Output	InitVal	 InitVar	MinVal	MaxVal	Name		Longname				Units		Scale	Offset	Type
+1,	0,	1,	-9999.0, 0.1,		200.0,	350.0,	TMIN,		Daily minimum Air Temperature,		K,		1.0,	0.0,	float
+2,	0,	0,	-9999.0, 0.1,		200.0,	350.0,	TMEAN,		Daily mean Air Temperature,		K,		1.0,	0.0,	float
+3,	0,	1,	-9999.0, 0.5,		0.0,	100.0,	VPD,		Daily mean Vapor Pressure Deficit,	mb,		1.0,	0.0,	float
+4,	0,	1,	-9999.0, 0.1,		0.0,	24.0,	PHOTO,		Daily cumulative Photoperiod,		hours,		1.0,	0.0,	float
+5,	0,	0,	-9999.0, 5.0,		0.0,	1000.,	RG,		Daily mean Global Radiation,		W/m2,		1.0,	0.0,	float
+6,	0,	0,	-9999.0, 1.0,		0.0,	100.,	RAIN,		Daily cumulative Rainfall,		mm,		1.0,	0.0,	float

@@ -1,0 +1,4 @@
+.compile makepft
+IF (!ERROR_STATE.CODE EQ 0) THEN resolve_all
+IF (!ERROR_STATE.CODE EQ 0) THEN save,/routines,filename='makepft.sav'
+exit,status=!ERROR_STATE.CODE

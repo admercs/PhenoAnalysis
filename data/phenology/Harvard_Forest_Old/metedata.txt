@@ -1,0 +1,86 @@
+ACPE: Acer pensylvanicum, striped maple
+ACRU: Acer rubrum, red maple
+ACSA: Acer saccharum, sugar maple
+AMSP: Amelanchier species, shadbush
+ARSP: Aronia species, chokeberry
+BEAL: Betula alleghaniensis, yellow birch
+BELE: Betula lenta, blackbirch
+BEPO: Betula popilofolia, gray birch
+CADE: Castanea dentata, chestnut
+COAL: Cornus alternifolia, alternate-leaved dogwood
+CRSP: Crataegus sp., hawthorne
+FAGR: Fagus grandifolia, beech
+FRAM: Fraxinus americana, white ash
+HAVI: Hamamelis virginia, witch hazel
+ILVE: Ilex verticillata, winterberry
+KAAN: Kalmia angustifolia, sheep laurel
+KALA: Kalmia latifolia, mountain laurel
+LYLI: Lyonia ligustina, maleberry
+NYSY: Nyssa sylvatica, blackgum
+PIST: Pinus strobus, white pine
+POTR: Populus tremuloides, trembling aspen
+PRSE: Prunus serotina, black cherry
+QUAL: Quercus alba, white oak
+QURU: Quercus rubra, red oak
+QUVE: Quercus velutina, black oak
+RHSP: Rhododendron sp., rhododendron
+SAPU: Sambucus pubens, red elderberry
+TSCA: Tsuga canadensis, hemlock
+VACO: Vaccinium corymbosum, highbush blueberry
+VIAL: Viburnum alnifolium, hobblebush
+VICA: Viburnum cassinoides, witherod
+
+
+
+Phenology Spring Daily Plant Observations
+
+DATE: The date is month/day/year.
+JULIAN: Julian date.
+TREEID: The tree ID is comprised of the first two letters of the genus plus the first two letters of the species (see "Species Codes" section) followed by a two digit number.
+CIRCUIT: Order in the circuit in which the trees were observed.
+BCON: Bud condition. This refers to the leaf bud from when it first begins to swell to when it has opened and leaves first appear. Possible entries are NS: no swelling; SS: slight swelling; MS: moderate swelling; VS: very swollen; BB: bud break.
+BBRK: This refers to the percentage of buds on the tree that have broken open, revealing leaves.
+FBUD: This is similar to bud condition, except it's for flower buds. Here entries are ND: no data; SS: slight swelling; MS: moderate swelling; VS: very swollen; BB: bud break, petals out.
+FOPN: This is the percentage of flower buds open on a tree.
+FPST: This is the percentage of flowers past bloom, either shrivelled, pollen gone, or petals fallen.
+SEX: M: Male, F: Female, P: Perfect, B: Monoecous, ND: No data.
+LENGTH: Leaf length in centimeters. The longest leaf is measured; this is not an average. Not recorded for all plants.
+WIDTH: Leaf width in centimeters. The largest leaf is measured; this is not an average. Not recorded for all plants.
+LFIN: This is the amount of individual leaf growth given as the percentage of final size, i.e. leaves are 25% of total leaf size. This is an average.
+L75: This is the percentage of leaves on the tree that are at least 75% of their total size. It does not go above 80.
+L95: This is the percentage of leaves on the tree that are greater or equal to their 95% of their final size. It does not go above 97.
+TIP: Leaf tip growth. Possible entries are 0: no mention, no growth; F: few tips; S: some tips; M: many tips growing.
+COMMENTS: comments
+Missing data are indicated by -99.
+
+
+Phenology Fall Daily Plant Observations
+
+DATE: The date is month/day/year.
+TREEID: The tree ID is comprised of the first two letters of the genus plus the first two letters of the species (see "Species Codes" section) followed by a two digit number.
+FOPEN: The percentage of flower buds open on the tree.
+FPAST: The percentage of flowers past bloom, either shrivelled, pollen gone, or petals fallen.
+LCOLOR: The percentage of leaves that have changed color on a given tree.
+LFALL: The percentage of leaves that have fallen from a given tree.
+CIRCUIT: Order in the circuit in which trees were observed (starting in 2002).
+COMMENTS: Comments (starting in 2002).
+Missing data are indicated by -99.
+
+Information About Each Plant
+
+TREEID: The tree ID is comprised of the first two letters of the genus plus the first two letters of the species (see "Species Codes" section) followed by a two digit number.
+TAG: The tag refers to the order in which the plants are observed in the study area.
+START: Date of first observation, if different from 3/23/1990.
+END: Date of final observation, if no longer observed.
+LATIN: The latin name of the plant.
+COMMON: The plant's common name.
+SITE: Where the plant grows in the study area. Each code stands for a particular section. LORD=Locust Opening Rd., SWED=Swamp Edge, SSBN=South Slope Burn, CSRD=Causeway Rd., PHRD=Prospect Hill Rd., SFLD=Shaler Hall Fields.
+LENGTH: Maximum length of a leaf for that tree, in centimeters.
+WIDTH: Maximum width of a leaf for that tree, in centimeters.
+SEX: P=Perfect flower, B= Monoecious, meaning both, M= Male, F= Female, U= Unknown.
+HGT91: Height of the plant in meters, measured in 1991.
+DBH91: Diameter Breast Height of the plant in centimeters, measured in 1991.
+CAN91: The canopy position of the plant as determined in 1991. Possible positions are: D=Dominant, C=Codominant, S=Suppressed, I=Intermediate.
+COMMENTS: Comments.
+Missing data are indicated by -9.0 or -99.00.
+

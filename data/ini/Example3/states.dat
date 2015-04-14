@@ -1,0 +1,17 @@
+Select = perturbed + analyzed. Output = written to NetCDF
+No.	Select	Output	InitVal	InitVar	MinVal	MaxVal	Name		Longname				Units		Scale	Offset	Type
+1,	0,	1,	0.5,	0.5,	0.0,	1.0,	FPAR,		Fraction of PAR absorbed by Plants,	1,		0.001,	0.0,	short
+2,	1,	1,	2.5,	1.0,	0.0,	10.0,	LAI,		Leaf Area Index,	     		m2/m2,		0.01,	0.0,	short
+3,	0,	0,	0.5,	0.5,	0.0,	1.0,	GSI,		Growing Season Index,			1,		0.005,	0.5,	byte
+4,	0,	1,	0.5,	0.5,	0.0,	1.0,	TEMP_FAC,	Temperature Control Factor,		1,		0.005,	0.5,	byte
+5,	0,	1,	0.5,	0.5,	0.0,	1.0,	MOIST_FAC,	Moisture Control Factor,		1,		0.005,	0.5,	byte
+6,	0,	1,	0.5,	0.5,	0.0,	1.0, 	LIGHT_FAC,	Light Control Factor,			1,		0.005,	0.5,	byte
+7,	0,	0,	0.5,	0.5,	0.0,	1.0, 	FORCE_FAC,	Temperature Forcing Factor,		1,		0.005,	0.5,	byte
+8,	0,	0,	0.5,	0.5,	0.0,	1.0, 	CHILL_FAC,	Temperature Chilling Factor,		1,		0.005,	0.5,	byte
+9,	0,	1,	-9999.0,0.25,	200.0,	350.0,	TMIN_AVE,	Averaged daily minimum Temperature,	K,		0.02,	0.0,	short
+10,	0,	1,	-9999.0,0.01,	0.0,	100.0,	VPD_AVE,	Averaged daily mean VPD,		mb,		0.005,	0.0,	short
+11,	0,	1,	-9999.0,0.1,	0.0,	24.0,	PHOTO_AVE,	Averaged daily cumulative Photoperiod,	hours,		0.001,	0.0,	short
+12,	0,	0,	-9999.0,10.0,	0.0,	1000.0,	RG_AVE,		Averaged daily mean Global Radiation,	W/m2,		0.1,	0.0,	short
+13,	0,	0,	-9999.0,0.01,	0.0,	100.0,	RAIN_AVE,	Averaged daily cumulative Rainfall,	mm,		0.01,	0.0,	short
+14,	0,	0,	-9999.0,0.01,	0.0,	100.0,	RAIN_AVE,	Averaged daily cumulative Rainfall,	mm,		0.01,	0.0,	short
+15,	0,	0,	-9999.0,0.01,	0.0,	200.0,	CHILL_AVE,	Averaged daily cumulated Chill State,	K*days,		0.01,	0.0,	short

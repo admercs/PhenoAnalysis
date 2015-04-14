@@ -1,0 +1,32 @@
+Plant Species Codes
+	1.	ACPE: Acer pensylvanicum, striped maple
+	2.	ACRU: Acer rubrum, red maple
+	3.	ACSA: Acer saccharum, sugar maple
+	4.	AMSP: Amelanchier species, shadbush
+	5.	ARSP: Aronia species, chokeberry
+	6.	BEAL: Betula alleghaniensis, yellow birch
+	7.	BELE: Betula lenta, blackbirch
+	8.	BEPO: Betula popilofolia, gray birch
+	9.	CADE: Castanea dentata, chestnut
+	10.	COAL: Cornus alternifolia, alternate-leaved dogwood
+	11.	CRSP: Crataegus sp., hawthorne
+	12.	FAGR: Fagus grandifolia, beech
+	13.	FRAM: Fraxinus americana, white ash
+	14.	HAVI: Hamamelis virginia, witch hazel
+	15.	ILVE: Ilex verticillata, winterberry
+	16.	KAAN: Kalmia angustifolia, sheep laurel
+	17.	KALA: Kalmia latifolia, mountain laurel
+	18.	LYLI: Lyonia ligustina, maleberry
+	19.	NYSY: Nyssa sylvatica, blackgum
+	20.	PIST: Pinus strobus, white pine
+	21.	POTR: Populus tremuloides, trembling aspen
+	22.	PRSE: Prunus serotina, black cherry
+	23.	QUAL: Quercus alba, white oak
+	24.	QURU: Quercus rubra, red oak
+	25.	QUVE: Quercus velutina, black oak
+	26.	RHSP: Rhododendron sp., rhododendron
+	27.	SAPU: Sambucus pubens, red elderberry
+	28.	TSCA: Tsuga canadensis, hemlock
+	29.	VACO: Vaccinium corymbosum, highbush blueberry
+	30.	VIAL: Viburnum alnifolium, hobblebush
+	31.	VICA: Viburnum cassinoides, witherod

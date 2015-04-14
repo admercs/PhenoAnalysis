@@ -1,0 +1,12 @@
+xmin, xmax, ymin and ymax give the coordinate boundaries in the units
+of the chosen coordinate system. xmin is the left edge of the leftmost
+gridbox, where xmax is the right edge of the rightmost gridbox. The
+bounds thus refer to grid box boundaries and not grid box centers. Except
+for a single point location, where xmin, xmax (and ymin, ymax, respectively) 
+give a singular (centered) value.
+
+The coordinate systems and optional parameters are following the Grid Mapping
+description of the NetCDF CF Convention.
+
+CF Grid Mapping is based itself on the FGDC "Content Standard for 
+Digital Geospatial Metadata" [FGDC].

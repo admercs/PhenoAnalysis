@@ -1,0 +1,6 @@
+# This is the site / region geographic boundary conditions file. Columns are separated by commas. For site locations xrange/yrange are scalars. 
+No.,	Abbr.,	Name,				xmin,		xmax,		ymin,		ymax,		deltax,		deltay,		Sitetype,	Projection,	Projparam,	Elevation
+1,	ALPS,	Alps,				5.0,		11.0,		45.0,		48.0,		0.1,		0.1,		grid,		latitude_longitude,		NA,		NA
+2,	ALPS2,	Alps-FULL,			5.0,		11.0,		45.0,		48.0,		0.008333333333333333,		0.008333333333333333,		grid,		latitude_longitude,		NA,		NA
+3,	ALPS3,	Alps-10x10,			0.0,		10.0,		40.0,		50.0,		0.008333333333333333,		0.008333333333333333,		grid,		latitude_longitude,		NA,		NA
+4,	ALPS4,	Alps-1x1,			5.0,		10.0,		45.0,		48.0,		1.0,		1.0,		grid,		latitude_longitude,		NA,		NA

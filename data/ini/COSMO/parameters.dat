@@ -1,0 +1,27 @@
+Select = perturbed + analyzed. Output = written to NetCDF
+No.	Select  Output	InitVal	 InitVar	MinVal	MaxVal	Name		Longname				Units		Scale	Offset	Type
+1,	1,	0,	271.0,	 5.0,		260.0,	290.0,	TMIN_MIN,	Minimum Temperature,			K,		1.0,	0.0,	float
+2,	1,	0,	278.0,	 5.0,		260.0,	290.0,	TMIN_MAX,	Maximum Temperature,			K,		1.0,	0.0,	float
+3,	1,	0,	10.0,	 10.0,		0.0,	50.0,	VPD_MIN,	Minimum Vapor Pressure Deficit,		mb,		1.0,	0.0,	float
+4,	1,	0,	30.0,	 10.0,		0.0,	50.0,	VPD_MAX,	Maximum Vapor Pressure Deficit,		mb,		1.0,	0.0,	float
+5,	1,	0,	9.0,	 2.0,		7.0,	16.0,	PHOTO_MIN,	Minimum Photoperiod,   			hours,		1.0,	0.0,	float
+6,	1,	0,	11.0,	 2.0,		7.0,	16.0,	PHOTO_MAX,	Maximum Photoperiod,			hours,		1.0,	0.0,	float
+7,	0,	0,	170.0,	 100.0,		100.0,	300.0,	RG_MIN,		Minimum Global Radiation,		W/m2,		1.0,	0.0,	float
+8,	0,	0,	200.0,	 100.0,		100.0,	300.0,	RG_MAX,		Maximum Global Radiation,		W/m2,		1.0,	0.0,	float
+9,	0,	0,	0.5,	 2.0,		0.0,	5.0,	RAIN_MIN,	Minimum Rainfall,			mm,		1.0,	0.0,	float
+10,	0,	0,	2.0,	 2.0,		0.0,	5.0,	RAIN_MAX,	Maximum Rainfall,			mm,		1.0,	0.0,	float
+11,	0,	0,	30.,	 50.0,		-10.0,	150.0,	CHILL_MIN,	Minimum Chilling State,			K*days,		1.0,	0.0,	float
+12,	0,	0,	70.,	 50.0,		-10.0,	150.0,	CHILL_MAX,	Maximum Chilling State,			K*days,		1.0,	0.0,	float
+13,	1,	0,	1.0,	 1.0,		0.0,	10.0,	LAI_MIN,	Minimum LAI,				m2/m2,		1.0,	0.0,	float
+14,	1,	0,	5.0,	 1.0,		0.0,	10.0,	LAI_MAX,	Maximum LAI,				m2/m2,		1.0,	0.0,	float
+15,	1,	0,	2.00,	 0.5,		0.5,	5.0,	GROWTHRATE,	Maximum Growthrate,			1/d,		1.0,	0.0,	float
+16,	1,	0,	2.00,	 0.5,		0.5,	5.0,	DECAYRATE,	Maximum Decayrate,			1/d,		1.0,	0.0,	float
+17,	1,	0,	5.0,	 1.0,		0.0,	10.0,	LAI_SAT,	Maximum LAI for Vegetation Class,	m2/m2,		1.0,	0.0,	float
+18,	1,	0,	0.95,	 0.01,		0.5,	1.0,	FPAR_SAT,	FPAR for maximum LAI,	   		1,		1.0,	0.0,	float
+19,	0,	0,	1.0,	 0.01,		0.0,	1.0,	FVCOVER,	Fraction of vegetation cover,		1,		1.0,	0.0,	float
+20,	0,	0,	21.0,	 5.0,		10.0,	1000.0,	TMIN_TAVE,	Averaging time for Temperature,		days,		1.0,	0.0,	float
+21,	0,	0,	21.0,	 5.0,		10.0,	1000.0,	VPD_TAVE,	Averaging time for VPD,			days,		1.0,	0.0,	float
+22,	0,	0,	0.0,	 0.0,		1.0,	1000.0,	PHOTO_TAVE,	Averaging time for Photoperiod,		days,		1.0,	0.0,	float
+23,	0,	0,	21.0,	 5.0,		10.0,	1000.0,	RG_TAVE,	Averaging time for RG,			days,		1.0,	0.0,	float
+24,	0,	0,	21.0,	 5.0,		10.0,	1000.0,	RAIN_TAVE,	Averaging time for Rainfall,		days,		1.0,	0.0,	float
+25,	0,	0,	0.0,	 0.0,		1.0,	1000.0,	CHILL_TAVE,	Averaging time for Chilling State,	days,		1.0,	0.0,	float

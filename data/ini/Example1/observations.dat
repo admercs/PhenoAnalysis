@@ -1,0 +1,4 @@
+Select = assimilated. Output = written to NetCDF
+No.	Select	Output	InitVal	InitVar	MinVal	MaxVal	Name		Longname				Units		Scale	Offset	Type
+1,	1,	1,	0.5,	0.05,	0.0,	1.0,	FPAR,		Fraction of PAR absorbed by Plants,	1,		1.0,	0.0,	float
+2,	1,	1,	2.0,	0.5,	0.0,	10.0, 	LAI,		Leaf Area Index,			m2/m2,		1.0,	0.0,	float

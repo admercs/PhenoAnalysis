@@ -1,0 +1,226 @@
+2012/03/04 Reto Stockli (MeteoSwiss)
+
+This file documents changes since the Pheno Analysis Version 1.0
+
+TODO:
+- test: weight observations by global pft occurence???
+- implement monthly aggregated output
+- F90-based pft map and topo map generation
+- implement MLEF
+- R-based diagnostics instead of IDL (get rid of IDL alltogether)
+- generate local-scale PFT adjustment: PFT in state vector!
+- add support for GEO and proj.4 projections
+
+2.0.0
+-----
+- forward model is now in single precision, EnKF runs in double precision
+- implemented reprojection module with support for specific (MODIS, rotated pole) projections
+- rewritten MODIS module
+- included new COSMO driver data
+- revised model geographic information to not be based on lon/lat only. Right now
+  the model grid operates in the native grid of the specified projection in the site file
+- packed meteorological driver data into derived type
+- reorganized output to correctly include topography, topography distribution and pft distribution
+- rewritten topo, pft, ecmwf, alma and COSMO reading routines with new projection routine
+- removed reading of NARR and GEOS data
+- tested single precision EnKF. Didn't work. So switched back to double precision
+- evergreen species received yearly averaged meteorological stats, so they do
+  not obey any seasonality but rather the mean leaf state responds to the mean
+  climatological state by e.g. lat and lon
+
+1.84
+----
+- adjusting parameter sets for better global prediction skill
+
+1.83
+----
+- revised IDL-based PFT-map generation scripts for Collection 5 MODIS LC/VCF data
+- pft map now uses ECMWF-based climatology of Temperature and Precipitation
+- revised IDL-based Topography-map generation scripts
+- ecmwf path (era interim or era 40 or operational) has to be given in namelist
+- FPAR/LAI assimilation data is more thoroughly screened for water pixels
+- revised parameter min/max separation: minimum separation of ensemble mean depends on initial variance
+- generated script to geographically subset ECMWF netcdf files
+- pft and topography data is now part of output files
+- switched from unlimited to fixed time dimension (due to bug in Parallel NetCDF 4)
+- namelist variable stateobs guarantees that model states are saved with the actual observation pft and hgt coverage
+  this allows a fair comparison of obs and mod for analyzed fields.
+- merged meteorology daily and multi-day average code into module (avoid temp arrays with intel compiler)
+- merged phenology prediction code into module (avoid temp arrays with intel compiler)
+- removed tave column in force, observation, state and parameter namelists
+- added a per-parameter min/max in init_module.F90
+
+1.81
+----
+- implemented chilling model for dbf pft's
+- adjusted parameters
+- removed pft-specific hard coded parameters (only gave trouble)
+- rewritten indexing of parameters/states/forcings
+- tested with example1 and 2
+- added yearly, monthly and daily resubmission to shell scripting
+- changed date_start and date_end from integer to character
+- bug corrected restart file is always written, except when restartdate 
+  is set to 1, then it is only written after the analysis step
+
+1.80
+----
+- removed src tree
+- rewritten observation gridding
+- modified subgrid-scale dis-/aggregation method
+- improved memory performance
+- redone submission scripts
+- redone restart procedure
+- redone ini/site namelist file structure
+- fixed bug in NetCDF output
+- many more things
+
+1.72
+----
+- corrected bug in netcdf_module.F90 : unlimited time dimension works now in Parallel NetCDF4 I/O
+- adjusted all ini files for new configuration on CSCS julier system (/store ...)
+- added new configuration script: config_julier.sh
+
+1.71
+----
+- added IDL and R analysis scripts for Swiss and Global climate change study (in progress)
+- added option in init_driver.F90 to select a subset of PFT's (e.g. only tall tree's)
+- added support for SLURM job submission system
+- improved performance of reading MODIS L3 tile data (modis_module.F90)
+
+1.70
+----
+- implemented fully new Parallel I/O for NetCDF output. In distributed mode, a parallel NetCDF-4 is written.
+- removed bug that prevented calculation of hgtlevels in no-prediction processes
+- removed bug that prevented to have the model's version number in processes > 0
+- parameters are not written in output file when distributed mode is used (nxprocs>1 or nyprocs>1)
+
+1.69
+----
+- adapted diagnostics to climate experiment
+
+1.68
+----
+- adapted Lapack detection on the IBM xlf&xlc compiler (bluefire)
+- adjusted new photoperiod calculation to restrict daylength to times where sun is at least 5deg over the horizon
+- re-tested examples 1 and 2
+- created and validated new global parameter set
+
+1.67
+----
+- completely rewritten phenology prediction and meteorology averaging codes to be self-consistent
+  and independent from other modules so that they can be implemented in other models
+
+1.66
+----
+- moved parameter min/max separation to the assimilation_module.F90 so that the
+  separation is also done on processes that do not perform prediction.
+
+1.65
+----
+- my second son Erich was born. We're very happy!
+- adjusted all prior parameter sets to converge to "realistic" solutions with the new LAIMIN/LAIMAX framework
+- adapted the Examples to perform a yearly analysis, collecting all observations from a full year, to yield a parameter
+  set that reflects constant parameters with seasonal variability of states
+- tested examples 1 and 2
+
+1.64
+----
+- changed from prediction of FPAR to prediction of LAI. This implies that now instead of FPARMIN/FPARMAX
+  the two parameters LAIMIN and LAIMAX are needed. FPAR is diagnosed from LAI by use of FPARSAT and LAISAT.
+- all parameter files have been adapted in data/ini and data/parameters. GROWTHRATE and DECAYRATE need to be
+  scaled since they now describe the dynamics of LAI instead of FPAR
+- a minor bug in enkf_module.F90 was corrected that resulted in a crash with nrobs=1 and use_sqrt=.true.
+- all examples were rerun and tested. It is recommended for any phenological data assimilation to use
+  a yearly analysis (and not at every time step) in order to be consistent with a seasonal cycle. This
+  however implies a longer assimilation period and a slower convergence.
+- adapted to up-to-date F90 coding styles: character*4 -> character(len=4) for use with gcc 4.5.x and higher
+
+1.63
+----
+- adapted configure script for better handling of NetCDF, HDF and Math libraries on different platforms
+- automatic inclusion of current code version number in files
+- option in state, parameter, forcing and observation output for NetCDF add_offset and scale_factor
+  and output variable type (byte, short compression etc.!)
+- added option to read scale_factor and add_offset in diagnostic scripts
+
+1.62
+----
+- modified init_driver.F90 to allow global prediction of fractional land area (for the assimilation only
+  land points with at least 50% land are chosen).
+- updated documentation and two examples
+
+1.60
+----
+- completely changed file structure, run scripts, configuration data
+- implemented the GNU autoconf / automake configuration
+- re-tested on Linux, OSX, AIX and other systems including several MPI distributions
+
+1.50
+----
+- improved idl analysis scripts for the global phenology paper that is currently in preparation.
+  this includes pft-specific global maps and the evaluation of the global parameter uncertainty and prediction error
+- successfully tested global data assimilation and prediction by use of photoperiod instead of global radiation
+- tested all example scripts (4 local and 1 regional data assimilation).
+- corrected pft short and long names in utils/pft/makepftclim.pro (the last 4-5 pft's (crops) were misnamed)
+- cleaned up directories for upload to sourceforge
+- updated documentation
+
+1.40
+----
+Too many changes have happened without intermediate versions during the period 2009/2010. They can be summarized:
+- 35 plant functional types included in regional experiments
+- code adapted for better scalability from Laptop to supercomputer scale
+- global parameter estimation rewritten for single solution and redistribution to regional domains
+- weighted and gridded observations for global / regional parameter estimation
+- full 10 year MODIS data assimilation possible (2000-2009)
+- publication about global phenological reanalysis with this code is in preparation
+
+1.10
+----
+- re-tested the 4 local and 1 regional experiments (regional experiment is shifted eastwards by 0.25 degrees)
+- added better VPD downscaling (first downscale temperature, then calculate downscaled VPD with large scale mixing ratio)
+- corrected bug in ERA-40 reading (ERA Interim was fine)
+
+1.09
+----
+- added support for Intel Compiler and Intel MPI
+- added GEOS4 reanalysis support
+- time averaging during assimilation for all parameters possible via parameter file (run/data/parameters.dat)
+  higher averaging numbers enable to slow down convergence for parameters that converge too quickly.
+- reprocessed example datasets with new IDL codes in utils/ (pft's, topography, ECMWF Interim) 
+
+1.08
+----
+- removed bug in MODIS observation error calculation
+- removed bad NetCDF output name (double definition of RAINMIN corrected)
+- new met driver module: cosmo_module.F90 reads COSMO NWP NetCDF surface weather forcing
+- added driver_module variables: pollon & pollat for treatment of rotated pole grids
+- pft, topo boundary conditions and met driver grids can be on rotated pole grids
+  --> If both, pft and topo BC are rotated, then the model and the assimilation 
+      also runs on the rotated pole grid, and the output is on that grid as well
+
+1.07
+----
+- Non-F90 standard system() command removed from all modules. Fully replaced by the glob.c routine 
+- Makefile PGI and XLF define statements removed (obsolete, since code is fully portable now)
+- fixed bug in pheno_analysis.pl script: did not correctly create runtime directory if it already was present from previous (aborted) run
+- all photoperiod parameters are now in units hours [h] instead of seconds [s]
+- optional flag simplifying the use of rainfall instead of vpd; or photoperiod instead of rg as predictors in phenology_module.F90
+  --> when those are selected then the PHOTOMIN/PHOTOMAX, or RAINMIN,RAINMAX parameters need to be selected for perturbation as well
+
+1.06
+----
+- length of sitename and gsitename(:) increased from 50 to 100 characters in driver_module.F90 and init_driver.F90
+
+1.05
+----
+- Automatic yearly job resubmission on NCAR bluefire (AIX, PBS) simplified
+- It is possible to run multiple instances of Pheno Analysis on a single host as long as they have a different experiment name. Before, Pheno Analysis had a single fixed temporary I/O directory, while now for each experiment a temporary output directory is created and driver/boundary/output data linked to this directory. Upon model termination, the temporary output directory is removed again
+- a new sites file: sites/sites_global.dat with 64 global sites, 4 sites per pft (except water) distributed over all continents that each contain an area with a pft majority for the respective pft
+- state assimilation disabled temporarily for both local and regional mode. We now only have parameters in the ensemble matrix since the main aim of this framework is to constrain parameters
+- several modifications in the analysis routines phenology_regional.pro and phenology_local.pro were performed
+
+1.01
+----
+- posteriori state and parameter inflation decreased from 1e-3 to 1e-6 times the initial state/parameter variance in assimilation_module.F90
+- total time diagnostics overflow for pgf90 fixed (imcomplete yet) in driver.F90

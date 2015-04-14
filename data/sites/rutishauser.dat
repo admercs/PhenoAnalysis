@@ -1,0 +1,34 @@
+# This is the site / region geographic boundary conditions file. Columns are separated by commas. For site locations xrange/yrange are scalars. 
+No.,    Abbr.,  Name,                           xmin,           xmax,           ymin,           ymax,           deltax,         deltay,         Sitetype,       Projection,     Projparam,      Elevation
+  1,       NA,                  Grossaffoltern,       7.360,       7.360,      47.070,      47.070,       0.000,       0.000,    grid,  latitude_longitude,      NA,     520
+  2,       NA,                      Davos-Dorf,       9.830,       9.830,      46.800,      46.800,       0.000,       0.000,    grid,  latitude_longitude,      NA,    1560
+  3,       NA,                           Enges,       7.010,       7.010,      47.050,      47.050,       0.000,       0.000,    grid,  latitude_longitude,      NA,     820
+  4,       NA,                     LaValsainte,       7.190,       7.190,      46.650,      46.650,       0.000,       0.000,    grid,  latitude_longitude,      NA,    1050
+  5,       NA,                         Liestal,       7.720,       7.720,      47.490,      47.490,       0.000,       0.000,    grid,  latitude_longitude,      NA,     350
+  6,       NA,                            Murg,       9.220,       9.220,      47.110,      47.110,       0.000,       0.000,    grid,  latitude_longitude,      NA,     500
+  7,       NA,                   Prato-Sornico,       8.660,       8.660,      46.390,      46.390,       0.000,       0.000,    grid,  latitude_longitude,      NA,     750
+  8,       NA,                            Rafz,       8.540,       8.540,      47.610,      47.610,       0.000,       0.000,    grid,  latitude_longitude,      NA,     515
+  9,       NA,                          Sarnen,       8.250,       8.250,      46.890,      46.890,       0.000,       0.000,    grid,  latitude_longitude,      NA,     500
+ 10,       NA,                        StMoritz,       9.830,       9.830,      46.480,      46.480,       0.000,       0.000,    grid,  latitude_longitude,      NA,    1800
+ 11,       NA,                          Trient,       6.995,       6.995,      46.050,      46.050,       0.000,       0.000,    grid,  latitude_longitude,      NA,    1300
+ 12,       NA,                         Versoix,       6.160,       6.160,      46.280,      46.280,       0.000,       0.000,    grid,  latitude_longitude,      NA,     440
+ 13,       NA,                        Wildhaus,       9.350,       9.350,      47.200,      47.200,       0.000,       0.000,    grid,  latitude_longitude,      NA,    1100
+ 14,       NA,                       Trondheim,      10.880,      10.880,      63.480,      63.480,       0.000,       0.000,    grid,  latitude_longitude,      NA,      25
+ 15,       NA,                           Turku,      22.270,      22.270,      60.440,      60.440,       0.000,       0.000,    grid,  latitude_longitude,      NA,      10
+ 16,       NA,                         Wexford,      -6.940,      -6.940,      52.390,      52.390,       0.000,       0.000,    grid,  latitude_longitude,      NA,      80
+ 17,       NA,                        Tharandt,      13.530,      13.530,      50.980,      50.980,       0.000,       0.000,    grid,  latitude_longitude,      NA,     360
+ 18,       NA,                           Trier,       6.660,       6.660,      49.750,      49.750,       0.000,       0.000,    grid,  latitude_longitude,      NA,     265
+ 19,       NA,                       Stuttgart,       9.210,       9.210,      48.710,      48.710,       0.000,       0.000,    grid,  latitude_longitude,      NA,    1210
+ 20,       NA,                 BanskaStiavnica,      18.930,      18.930,      48.450,      48.450,       0.000,       0.000,    grid,  latitude_longitude,      NA,     540
+ 21,       NA,                        Slepcany,      18.360,      18.360,      48.330,      48.330,       0.000,       0.000,    grid,  latitude_longitude,      NA,     180
+ 22,       NA,                          Vienna,      16.360,      16.360,      48.250,      48.250,       0.000,       0.000,    grid,  latitude_longitude,      NA,     202
+ 23,       NA,                          Munich,      11.160,      11.160,      48.120,      48.120,       0.000,       0.000,    grid,  latitude_longitude,      NA,     540
+ 24,       NA,                        Freiburg,       7.900,       7.900,      47.910,      47.910,       0.000,       0.000,    grid,  latitude_longitude,      NA,    1210
+ 25,       NA,                         Zuerich,       8.450,       8.450,      47.360,      47.360,       0.000,       0.000,    grid,  latitude_longitude,      NA,     600
+ 26,       NA,                       Ljubljana,      14.490,      14.490,      46.050,      46.050,       0.000,       0.000,    grid,  latitude_longitude,      NA,     310
+ 27,       NA,                          Skopje,      22.850,      22.850,      41.980,      41.980,       0.000,       0.000,    grid,  latitude_longitude,      NA,     240
+ 28,       NA,                           Porto,      -8.500,      -8.500,      41.250,      41.250,       0.000,       0.000,    grid,  latitude_longitude,      NA,      30
+ 29,       NA,                        Cardedeu,       2.370,       2.370,      41.630,      41.630,       0.000,       0.000,    grid,  latitude_longitude,      NA,     195
+ 30,       NA,                       Talamanca,      -3.520,      -3.520,      40.740,      40.740,       0.000,       0.000,    grid,  latitude_longitude,      NA,     654
+ 31,       NA,                    ViennaForest,      16.300,      16.300,      48.300,      48.300,       0.000,       0.000,    grid,  latitude_longitude,      NA,     200
+ 32,       NA,               ViennaAgriculture,      16.750,      16.750,      48.300,      48.300,       0.000,       0.000,    grid,  latitude_longitude,      NA,     200

@@ -1,0 +1,9 @@
+# This is the site / region geographic boundary conditions file. Columns are separated by commas. For site locations xrange/yrange are scalars. 
+No.,	Abbr.,	Name,				xmin,		xmax,		ymin,		ymax,		deltax,		deltay,		Sitetype,	Projection,	Projparam,	Elevation
+1,	CH1,	Swiss-Lowland-1.0,		8.0,		9.0,		47.0,		48.0,		1.0,		1.0,		grid,		latitude_longitude,		NA,		NA
+2,	CH2,	Swiss-Lowland-0.5,		8.0,		9.0,		47.0,		48.0,		0.5,		0.5,		grid,		latitude_longitude,		NA,		NA
+3,	CH3,	Swiss-Lowland-0.1,		8.0,		9.0,		47.0,		48.0,		0.1,		0.1,		grid,		latitude_longitude,		NA,		NA
+4,	CH4,	Swiss-Lowland-FULL,		8.0,		9.0,		47.0,		48.0,		0.008333333333333,		0.008333333333333,		grid,		latitude_longitude,		NA,		NA
+5,	CH,	Swiss-Lowland,			8.125,		8.375,		47.125,		47.375,		0.25,		0.25,		grid,		latitude_longitude,		NA,		NA
+6,	CH,	Swiss-Lowland,			8.0,		9.0,		47.0,		48.0,		1.0,		1.0,		grid,		latitude_longitude,		NA,		NA
+7,	CH,	Swiss-Lowland,			7.5,		8.0,		47.0,		47.5,		0.5,		0.5,		grid,		latitude_longitude,		NA,		NA

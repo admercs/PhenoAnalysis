@@ -1,0 +1,19 @@
+The Swiss 'Spring plant' phenological series for Switzerland is defined as the weighted annual mean day counted from January 1 for beech bud burst (Fagus sylvatica) and full flowering (FF) of the cherry (Prunus avium) and apple (Malus domesticus) trees [Rutishauser et al., 2007]. We used the updated data set 1958-2006 [Rutishauser et al., 2008] In Switzerland, these phases occurred on average on April 28, April 23, and May 7 during the 1951-2006 period. 'Spring plant' dates are based on 26-73 observations per year from up 8 to 23 reporting stations of the Swiss Phenological Network (SPN) [Defila, 1991; Defila and Clot, 2001].Rutishauser, T.; Luterbacher, J.; Defila, C.; Frank, D. & Wanner, H. (2008):Swiss spring plant phenology 2007: Extremes, a multi-century perspective and changes in temperature sensitivity, Geophysical Research Letters, doi:10.1029/2007GL032545, in press.
+
+
+
+"INDEX.2006.uncert.dat": DIESER TEXT GEHÖRT DAZU
+Taking into account observation variability, uncertaintites and station bias, 
+we estimate a ‘Spring plant’ value within a variability of 6.1 ± 1.5 to 12 ± 2.5 days dependina on the plant species [Rutishauser et al. 2007]. We use the mean of each phase with a value of 
+±10 days. After 20-year gaussian filtering decadal uncertainties are associated with a smoothed 2-standard errors of ±3.6 days.
+
+
+
+
+
+
+"INDEX.2006.MLMConfLevel.dat" DIESER TEXT GEHÖRT DAZU
+Regional averages are calculated after Schaber and Badeck [2002] that found that two-way crossed linear mixed models with random station effects and fixed year effects most appropriately describe the common interannual phenological variability in the region of interest (software of Schaber [2003]). Uncertainties are indicated by the 95%-confidence range.
+
+Schaber, J. (2003) The R pheno package. Auxiliary functions for phenological data analysis, http://cran.at.r-project.org/src/contrib/PACKAGES.html
+Schaber, J.A. & Badeck, F. (2002) Evaluation of methods for the combination of phenological time series and outlier detection, Tree Physiology, 22, 973-982

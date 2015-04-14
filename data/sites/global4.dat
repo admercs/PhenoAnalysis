@@ -1,0 +1,14 @@
+# This is the site / region geographic boundary conditions file. Columns are separated by commas. For site locations xrange/yrange are scalars. 
+No.,    Abbr.,  Name,                           xmin,           xmax,           ymin,           ymax,           deltax,         deltay,         Sitetype,       Projection,     Projparam,      Elevation
+  1,	A,	Morgan_Monroe_State_Forest,	-86.500,	-86.000,	38.900,		39.400,		0.500,		0.500,		grid,		latitude_longitude,		NA,		NA
+  2,	B,	Santarem_KM83,			-55.500,	-55.000,	-3.300,		-2.800,		0.500,		0.500,		grid,		latitude_longitude,		NA,		NA
+  3,	C,	BOREAS_NSA_OBS,			-98.700,	-98.200,	55.600,		56.100,		0.500,		0.500,		grid,		latitude_longitude,		NA,		NA
+  4,	D,	Tonzi,				-121.200,	-120.700,	38.200,		38.700,		0.500,		0.500,		grid,		latitude_longitude,		NA,		NA
+  5,	E,	C3Grass-BOREAL,			-107.700,	-107.200,	58.200,		58.700,		0.500,		0.500,		grid,		latitude_longitude,		NA,		NA
+  6,	F,	C3Grass_ARCTIC,			-107.700,	-107.200,	64.200,		64.700,		0.500,		0.500,		grid,		latitude_longitude,		NA,		NA
+  7,	A5,	Morgan_Monroe_State_Forest-5x5,	-86.500,	-86.000,	38.900,		39.400,		0.100,		0.100,		grid,		latitude_longitude,		NA,		NA
+  8,	B5,	Santarem_KM83-5x5,		-55.500,	-55.000,	-3.300,		-2.800,		0.100,		0.100,		grid,		latitude_longitude,		NA,		NA
+  9,	C5,	BOREAS_NSA_OBS-5x5,		-98.700,	-98.200,	55.600,		56.100,		0.100,		0.100,		grid,		latitude_longitude,		NA,		NA
+  10,	D5,	Tonzi-5x5,			-121.200,	-120.700,	38.200,		38.700,		0.100,		0.100,		grid,		latitude_longitude,		NA,		NA
+  11,	E5,	C3Grass_BOREAL-5x5,		-107.700,	-107.200,	58.200,		58.700,		0.100,		0.100,		grid,		latitude_longitude,		NA,		NA
+  12,	F5,	C3Grass_ARCTIC-5x5,		-107.700,	-107.200,	64.200,		64.700,		0.100,		0.100,		grid,		latitude_longitude,		NA,		NA

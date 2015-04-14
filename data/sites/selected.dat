@@ -1,0 +1,24 @@
+# This is the site / region geographic boundary conditions file. Columns are separated by commas. For site locations xrange/yrange are scalars. 
+No.,    Abbr.,  Name,                           xmin,           xmax,           ymin,           ymax,           deltax,         deltay,         Sitetype,       Projection,     Projparam,      Elevation
+  1,    BEVie,                        Vielsalm,       5.999,       5.999,      50.309,      50.309,       0.000,       0.000,    grid,  latitude_longitude,      NA,     450
+  2,    DETha,                        Tharandt,      13.567,      13.567,      50.964,      50.964,       0.000,       0.000,    grid,  latitude_longitude,      NA,     380
+  3,    ITCpz,                  CastelPorziano,      12.377,      12.377,      41.706,      41.706,       0.000,       0.000,    grid,  latitude_longitude,      NA,      68
+  4,    ITCol,                      Collelongo,      13.588,      13.588,      41.849,      41.849,       0.000,       0.000,    grid,  latitude_longitude,      NA,    1550
+  5,    FIKaa,                        Kaamanen,      27.295,      27.295,      69.200,      69.200,       0.000,       0.000,    grid,  latitude_longitude,      NA,     155
+  6,    FIHyy,                        Hyytiala,      24.295,      24.295,      61.847,      61.847,       0.000,       0.000,    grid,  latitude_longitude,      NA,     181
+  7,    ESES1,                        El_Saler,      -0.519,      -0.519,      39.346,      39.346,       0.000,       0.000,    grid,  latitude_longitude,      NA,      10
+  8,    FRPue,                       Puechabon,       3.596,       3.596,      43.741,      43.741,       0.000,       0.000,    grid,  latitude_longitude,      NA,     270
+  9,    FRHes,                      Sarrebourg,       7.065,       7.065,      48.674,      48.674,       0.000,       0.000,    grid,  latitude_longitude,      NA,     300
+ 10,     KM83,                   Santarem_KM83,     -54.971,     -54.971,      -3.018,      -3.018,       0.000,       0.000,    grid,  latitude_longitude,      NA,       0
+ 11,     KM67,                   Santarem_KM67,     -54.959,     -54.959,      -2.857,      -2.857,       0.000,       0.000,    grid,  latitude_longitude,      NA,       0
+ 12,     MMSF,      Morgan_Monroe_State_Forest,     -86.413,     -86.413,      39.323,      39.323,       0.000,       0.000,    grid,  latitude_longitude,      NA,     275
+ 13,    BNOBS,                  BOREAS_NSA_OBS,     -98.481,     -98.481,      55.880,      55.880,       0.000,       0.000,    grid,  latitude_longitude,      NA,     259
+ 14,       LB,                      Lethbridge,    -112.940,    -112.940,      49.709,      49.709,       0.000,       0.000,    grid,  latitude_longitude,      NA,     960
+ 15,       NA,                        FortPeck,    -105.101,    -105.101,      48.308,      48.308,       0.000,       0.000,    grid,  latitude_longitude,      NA,     634
+ 16,       HF,                  Harvard_Forest,     -72.171,     -72.171,      42.538,      42.538,       0.000,       0.000,    grid,  latitude_longitude,      NA,     303
+ 17,       NW,                     Niwot_Ridge,    -105.546,    -105.546,      40.033,      40.033,       0.000,       0.000,    grid,  latitude_longitude,      NA,    3050
+ 18,       NA,                      Wind_River,    -121.952,    -121.952,      45.820,      45.820,       0.000,       0.000,    grid,  latitude_longitude,      NA,     371
+ 19,       NA,                       Bondville,     -88.292,     -88.292,      40.006,      40.006,       0.000,       0.000,    grid,  latitude_longitude,      NA,     213
+ 20,       NA,                    Willow_Creek,     -90.080,     -90.080,      45.806,      45.806,       0.000,       0.000,    grid,  latitude_longitude,      NA,     520
+ 21,       NA,                           Tonzi,    -120.966,    -120.966,      38.432,      38.432,       0.000,       0.000,    grid,  latitude_longitude,      NA,     177
+ 22,       NA,                           Vaira,    -120.951,    -120.951,      38.407,      38.407,       0.000,       0.000,    grid,  latitude_longitude,      NA,     129

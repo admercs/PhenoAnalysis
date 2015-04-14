@@ -1,0 +1,17 @@
+2011/09/21 Reto Stockli (MeteoSwiss)
+
+This is the root directory of the Pheno Analysis framework. A documentation can be found in doc/pheno_analysis_manual.pdf.
+All relevant scientific papers are listed there.
+
+The directory structure is as follows:
+
+bin             : compiled model will be placed here during install
+doc             : documentation to the model and to the employed datasets
+src/analysis    : model and data assimilation source code
+src/diagnostic  : IDL code to analyze the model output
+src/utils       : utilities to build pft and topography maps, download MODIS data or process ECMWF data
+data/ini        : experiment namelists, parameters, observation forcing and state namelists for each experiment
+data/parameters : local and regional parameter files for predictions
+data/sites      : geographical domains and names of sites/regions are defined here
+scripts         : these are the perl-based wrapper scripts to run the Pheno Analysis framework
+

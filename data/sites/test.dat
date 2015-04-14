@@ -1,0 +1,9 @@
+# This is the site / region geographic boundary conditions file. Columns are separated by commas. For site locations xrange/yrange are scalars. 
+No.,	Abbr.,	Name,				xmin,		xmax,		ymin,		ymax,		deltax,		deltay,		Sitetype,	Projection,	Projparam,	Elevation
+1,	NW,	NW,				-180.0,		-179.0,		89.0,		90.0,		0.5,		0.5,		grid,		latitude_longitude,		NA,		NA
+2,	NE,	NE,				179.0,		180.0,		89.0,		90.0,		0.5,		0.5,		grid,		latitude_longitude,		NA,		NA
+3,	SW,	SW,				-180.0,		-179.0,		-90.0,		-89.0,		0.5,		0.5,		grid,		latitude_longitude,		NA,		NA
+4,	SE,	SE,				179.0,		180.0,		-90.0,		-89.0,		0.5,		0.5,		grid,		latitude_longitude,		NA,		NA
+5,	TEST,	TEST,				-105.05,	-105.0,		40.2,		40.25,		0.025,		0.05,		grid,		latitude_longitude,		NA,		NA
+6,	C4,	C4,				22.0,		23.0,		11.0,		12.0,		0.1,		0.1,		grid,		latitude_longitude,		NA,		NA
+7,	C4,	C4-FULL,			22.0,		23.0,		11.0,		12.0,		0.008333333333333,		0.008333333333333,		grid,		latitude_longitude,		NA,		NA

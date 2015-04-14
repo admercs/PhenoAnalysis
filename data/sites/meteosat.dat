@@ -1,0 +1,14 @@
+# This is the site / region geographic boundary conditions file. Columns are separated by commas. min/max coordinates are pixel edge not center.
+No.,	Short,	Name,			xmin,		xmax,		ymin,		ymax,		deltax,		deltay,		Sitetype,	Projection,	Projparam,	Elevation
+1,	TEST,	TEST,			1300,		1700,		2000,		2500,		1.0,		1.0,		TEST,		geosat,		satname=msg;sensor=seviri;channel=visir;satlon=0.0;satlat=0.0;sathgt=42164.0,		0
+2,	TEST2,	TEST2,			500,		3000,		500,		3000,		1.0,		1.0,		TEST,		geosat,		satname=msg;sensor=seviri;channel=visir;satlon=0.0;satlat=0.0;sathgt=42164.0,		0
+3,	LR,	LowerRight,		1,		1,		1,		1,		0.0,		0.0,		TEST,		geosat,		satname=msg;sensor=seviri;channel=visir;satlon=0.0;satlat=0.0;sathgt=42164.0,		0
+4,	LL,	LowerLeft,		3712,		3712,		1,		1,		0.0,		0.0,		TEST,		geosat,		satname=msg;sensor=seviri;channel=visir;satlon=0.0;satlat=0.0;sathgt=42164.0,		0
+5,	UR,	UpperRight,		1,		1,		3712,		3712,		0.0,		0.0,		TEST,		geosat,		satname=msg;sensor=seviri;channel=visir;satlon=0.0;satlat=0.0;sathgt=42164.0,		0
+6,	UL,	UpperLeft,		3712,		3712,		3712,		3712,		0.0,		0.0,		TEST,		geosat,		satname=msg;sensor=seviri;channel=visir;satlon=0.0;satlat=0.0;sathgt=42164.0,		0
+7,	CL,	CenterLeft,		3650,		3700,		1800,		1806,		1.0,		1.0,		TEST,		geosat,		satname=msg;sensor=seviri;channel=visir;satlon=0.0;satlat=0.0;sathgt=42164.0,		0
+8,	RE1,	Region1,		1680,		1689,		3300,		3309,		1.0,		1.0,		TEST,		geosat,		satname=msg;sensor=seviri;channel=visir;satlon=0.0;satlat=0.0;sathgt=42164.0,		0
+9,	RE4,	Region4,		1680,		1699,		3300,		3319,		1.0,		1.0,		TEST,		geosat,		satname=msg;sensor=seviri;channel=visir;satlon=0.0;satlat=0.0;sathgt=42164.0,		0
+10,	RE16,	Region16,		1670,		1709,		3290,		3329,		1.0,		1.0,		TEST,		geosat,		satname=msg;sensor=seviri;channel=visir;satlon=0.0;satlat=0.0;sathgt=42164.0,		0
+11,	FDMSG,	Fulldisk-MSG,		1,		3712,		1,		3712,		1.0,		1.0,		TEST,		geosat,		satname=msg;sensor=seviri;channel=visir;satlon=0.0;satlat=0.0;sathgt=42164.0,		0
+12,	FDMFG,	Fulldisk-MFG,		1,		5000,		1,		5000,		1.0,		1.0,		TEST,		geosat,		satname=mfg;sensor=mviri;channel=vis;satlon=0.0;satlat=0.0;sathgt=42164.0,		0

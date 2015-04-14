@@ -1,0 +1,5 @@
+# This is the site / region geographic boundary conditions file. Columns are separated by commas. For site locations xrange/yrange are scalars. 
+No.,	Abbr.,	Name,				xmin,		xmax,		ymin,		ymax,		deltax,		deltay,		Sitetype,	Projection,	Projparam,	Elevation
+1,	HF,	Harvard-Forest,			-72.171418,	-72.171478,	42.537756,	42.537756,	0.0,		0.0,		FLUXNET,	latitude_longitude,		NA,		60
+2,	HF,	Harvard-Forest,			-72.5,		-72.0,		42.25,		42.75,		0.5,		0.5,		grid,		latitude_longitude,		NA,		NA
+3,	HF,	Harvard-Forest,			-72.2,		-72.1,		42.5,		42.6,		0.1,		0.1,		grid,		latitude_longitude,		NA,		NA
